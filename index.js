@@ -1,19 +1,19 @@
 let data = [
   {
-    id: 0,
-    img: "https://picsum.photos/id/237/500/300",
+      id: 0,
+      img: "./Assets/img1.jpg",
   },
   {
-    id: 1,
-    img: "https://picsum.photos/id/1/500/300",
+      id: 1,
+      img: "./Assets/img2.jpg",
   },
   {
-    id: 2,
-    img: "https://picsum.photos/id/10/500/300",
+      id: 2,
+      img: "./Assets/img3.jpg",
   },
   {
-    id: 3,
-    img: "https://picsum.photos/id/20/500/300",
+      id: 3,
+      img: "./Assets/img4.jpg",
   },
 ];
 let id;
@@ -42,7 +42,7 @@ for (let i = 0; i < data.length; i++) {
     hii();
   });
 }
-hii();
+// hii();
 
 nextbtn.addEventListener("click", () => {
   navigationDots.children[imgcount - 1].classList.remove("active");
@@ -67,10 +67,9 @@ function hii() {
   } else if (imgcount < 1) {
     imgcount = data.length;
   }
-  conatiner.style.transform = `translateX(-${(imgcount - 1) * 500}px)`;
+  conatiner.style.transform = `translateX(-${(imgcount - 1) * 640}px)`;
   navigationDots.children[imgcount - 1].classList.add("active");
   id = setTimeout(() => {
-    console.log(imgcount);
     navigationDots.children[imgcount - 1].classList.remove("active");
     imgcount++;
     hii();
