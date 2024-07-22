@@ -10,4 +10,4 @@ also for each image i have added dot by clicking on that dot we can got to that 
 - Css
 - Javacsript
 
-  Link: https://app.netlify.com/sites/velvety-trifle-6c9175/overview
+  Link: https://velvety-trifle-6c9175.netlify.app/
